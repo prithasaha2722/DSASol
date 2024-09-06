@@ -5,15 +5,7 @@
 
 public class ZeroOneKnapsack {
 
-    /*
-        Q1. V 的起始点为 Ci 还是 0？ Ci 起始是否有效？ 为什么？
-        Q2. V 起始 bound 为 bound = max(V - sum(Ci ... Cn), Ci)。 为什么？
-        Q3. 初始化值，恰好装满背包 vs 没有要求必须把背包装满？
-    */
-
-    /**
-     * dp[i][v] = max{dp[i-1][v], dp[i-1][v-c[i]] + w[i]}
-     */
+    
     public int maxValue(int[] costs, int[] weights, int V) {
         if (costs == null || weights == null) return 0;
         int N = costs.length;
